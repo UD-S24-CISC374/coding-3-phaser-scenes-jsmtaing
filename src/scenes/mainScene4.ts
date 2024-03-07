@@ -18,7 +18,7 @@ export default class MainScene extends Phaser.Scene {
     private gameOver = false;
 
     constructor() {
-        super({ key: "MainScene" });
+        super({ key: "MainScene4" });
     }
 
     create() {
@@ -122,15 +122,13 @@ export default class MainScene extends Phaser.Scene {
         this.scoreText.setText("Score: " + this.score);
 
         if (this.stars?.countActive(true) === 0) {
-            this.scene.pause("mainScene");
-            this.scene.start("mainScene2");
-            /* this.stars.children.iterate((c) => {
+            this.stars.children.iterate((c) => {
                 const child = c as Phaser.Physics.Arcade.Image;
                 child.enableBody(true, child.x, 0, true, true);
                 return true;
-            }); */
+            });
 
-            /* if (this.player) {
+            if (this.player) {
                 const x =
                     this.player.x < 400
                         ? Phaser.Math.Between(400, 800)
@@ -144,7 +142,7 @@ export default class MainScene extends Phaser.Scene {
                 bomb.setBounce(1);
                 bomb.setCollideWorldBounds(true);
                 bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
-            } */
+            }
         }
     }
 
