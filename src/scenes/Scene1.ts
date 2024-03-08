@@ -19,7 +19,7 @@ export default class Scene1 extends Phaser.Scene {
 
     create() {
         this.cameras.main.fadeIn(Constants.FADE_DURATION, Constants.FADE_COLOR_RED, Constants.FADE_COLOR_GREEN, Constants.FADE_COLOR_BLUE);
-        this.add.image(this.cameras.main.displayWidth / 2, this.cameras.main.displayHeight / 2, 'kb1');
+        this.add.image(this.cameras.main.displayWidth / 2, this.cameras.main.displayHeight / 2, 'kb_1');
 
         const kikiBtn = this.add.text(this.cameras.main.displayWidth * (1/4), this.cameras.main.displayHeight * (7/10), 'KIKI', { color: '#2B2F33', fontSize: '36px'}).setInteractive();
         kikiBtn.on('pointerdown', () => {
