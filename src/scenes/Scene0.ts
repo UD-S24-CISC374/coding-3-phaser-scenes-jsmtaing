@@ -1,7 +1,7 @@
 import Phaser from "phaser";
 
 import Constants from "./Constants";
-import { STATE_DEFAULT } from "./State"
+//import { STATE_DEFAULT } from "./State"
 
 export default class Scene0 extends Phaser.Scene {
     private fading: boolean;
