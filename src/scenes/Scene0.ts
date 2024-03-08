@@ -27,8 +27,8 @@ export default class Scene0 extends Phaser.Scene {
             this.fading = true;
         });
 
-        this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, () => {
-            this.scene.start('Scene1', STATE_DEFAULT);
-        });
+        //this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, () => {
+        //    this.scene.start('Scene1', STATE_DEFAULT);
+        //});
     }
 }
