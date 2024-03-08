@@ -32,7 +32,7 @@ export const CONFIG = {
         arcade: {
             debug: false,
             gravity: { y: 300 },
-            fps: 30,
+            fps: 60,
         },
     },
     input: {
