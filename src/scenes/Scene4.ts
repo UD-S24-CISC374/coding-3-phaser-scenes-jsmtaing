@@ -3,12 +3,12 @@ import Phaser from "phaser";
 import Constants from "./Constants";
 import State, { STATE_DEFAULT } from "./State";
 
-export default class Scene1 extends Phaser.Scene {
+export default class Scene4 extends Phaser.Scene {
     private state: State;
     private fading: boolean;
 
     constructor() {
-        super({ key: 'Scene1' });
+        super({ key: 'Scene4' });
         this.state = STATE_DEFAULT;
         this.fading = false;
     }
@@ -19,7 +19,7 @@ export default class Scene1 extends Phaser.Scene {
 
     create() {
         this.cameras.main.fadeIn(Constants.FADE_DURATION, Constants.FADE_COLOR_RED, Constants.FADE_COLOR_GREEN, Constants.FADE_COLOR_BLUE);
-        this.add.image(this.cameras.main.displayWidth / 2, this.cameras.main.displayHeight / 2, 'kb_1');
+        this.add.image(this.cameras.main.displayWidth / 2, this.cameras.main.displayHeight / 2, 'kb_4');
 
         const kikiBtn = this.add.text(this.cameras.main.displayWidth * (1/4), this.cameras.main.displayHeight * (7/10), 'KIKI', { color: '#2B2F33', fontSize: '36px'}).setInteractive();
         kikiBtn.on('pointerdown', () => {
@@ -37,7 +37,7 @@ export default class Scene1 extends Phaser.Scene {
         });
 
         this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, () => {
-            this.scene.start('Scene2', this.state);
+            this.scene.start('Scene5', this.state);
         });
     }
 }

@@ -7,13 +7,12 @@ export default class Preload extends Phaser.Scene {
 
     preload(){
         // Images
-        this.load
-            .image('kb_1', 'assets/img/kb_1.jpg')
-            .image('kb_2', 'assets/img/kb_2.jpg')
-            .image('kb_3', 'assets/img/kb_3.jpg')
-            .image('kb_4', 'assets/img/kb_4.jpg')
-            .image('kb_5', 'assets/img/kb_5.jpg')
-            .image('kb_6', 'assets/img/kb_6.jpg');
+        this.load.image('kb_1', 'assets/img/kb_1.jpg');
+        this.load.image('kb_2', 'assets/img/kb_2.jpg');
+        this.load.image('kb_3', 'assets/img/kb_3.jpg');
+        this.load.image('kb_4', 'assets/img/kb_4.jpg');
+        this.load.image('kb_5', 'assets/img/kb_5.jpg');
+        this.load.image('kb_6', 'assets/img/kb_6.jpg');
     }
 
     create() {
