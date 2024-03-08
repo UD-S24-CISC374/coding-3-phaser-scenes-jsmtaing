@@ -12,7 +12,7 @@ export default class Scene0 extends Phaser.Scene {
     }
 
     create() {
-        this.add.text(this.cameras.main.displayWidth * (1/4), this.cameras.main.displayHeight * (4/10), 'Select *KIKI* or *BOUBA* to start!', { color: '#2b2f33', fontsize: '42px'});
+        this.add.text(this.cameras.main.displayWidth * (1/4), this.cameras.main.displayHeight * (4/10), 'Select *KIKI* or *BOUBA* to start!', { color: '#2b2f33', fontSize: '42px'});
 
         const kikiBtn = this.add.text(this.cameras.main.displayWidth * (1/4), this.cameras.main.displayHeight * (7/10), 'KIKI', { color: '#2B2F33', fontSize: '36px'}).setInteractive();
         kikiBtn.on('pointerdown', () => {
