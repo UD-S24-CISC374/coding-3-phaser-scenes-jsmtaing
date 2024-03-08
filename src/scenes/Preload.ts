@@ -19,7 +19,7 @@ export default class Preload extends Phaser.Scene {
     create() {
         const a_desc: Phaser.Types.Animations.Animation = {
             key: 'a',
-            frame: [],
+            frames: [],
             frameRate: 15,
             repeat: -1
         };
@@ -36,7 +36,7 @@ export default class Preload extends Phaser.Scene {
             repeat: -1
         };
         for (let i = 0; i <= 49; i++) {
-            (j_desc.frames as Phaser.Types.Animations.AnimationFram[]).push({ key: `j${i}` });
+            (j_desc.frames as Phaser.Types.Animations.AnimationFrame[]).push({ key: `j${i}` });
         }
         this.anims.create(j_desc);
 
