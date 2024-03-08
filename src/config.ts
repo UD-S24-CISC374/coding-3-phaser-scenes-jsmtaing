@@ -26,7 +26,8 @@ export const CONFIG = {
         width: DEFAULT_WIDTH,
         height: DEFAULT_HEIGHT,
     },
-    scene: [Preload, Scene0, Scene1, Scene2, Scene3, Scene4, Scene5, Scene6, Scene7, Scene8],
+    scene: [Preload, Scene0//, Scene1, Scene2, Scene3, Scene4, Scene5, Scene6, Scene7, Scene8],
+    ],
     physics: {
         default: "arcade",
         arcade: {
